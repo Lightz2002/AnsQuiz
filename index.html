@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AnsQuiz</title>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <ul class="question-list"></ul>
+            <form class="form"></form>
+        </div>
+        <div class="overlay hidden">
+            <div class="dialog">
+                <h1 class="dialog-title">Submit Your Quiz</h1>
+                <p class="dialog-body">
+                    After submit you can't change your answer, and will receive your score
+                </p>
+                <div class="dialog-btn-container">
+                    <input class="btn btn-cancel" type="button" value="Cancel" />
+                    <input class="btn btn-submit btn-submit-quiz" type="button" value="Submit" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
