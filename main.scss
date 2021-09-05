@@ -1,8 +1,10 @@
 $primary-color: #70e9f1;
 $secondary-color: #65d2d9;
 $tertiary-color: #5abac1;
-$light-primary: #e2fbfc;
-$lighter-primary: #d4f8fb;
+$lighter-primary: #a9f2f7;
+$dark-primary: #438c91;
+$darker-primary: #224648;
+$light-primary: #9bf0f5;
 $light-warn-color: #fde4b5;
 $warning-color: #f9a408;
 $hovered-warn-color: #e09407;
@@ -11,7 +13,7 @@ $darkGrey: #171a1c;
 $darkerGrey: #0c0d0e;
 $lightGrey: #454849;
 $lighterGrey: #b9babb;
-$white: #fff;
+$background: #393939;
 
 $large-size: 4rem;
 $medium-size: 2.4rem;
@@ -39,7 +41,7 @@ $small-size: 1.6rem;
 .question-list-item:hover {
     cursor: pointer;
     user-select: none;
-    color: $white;
+    color: $background;
 }
 
 .btn:hover,
@@ -84,7 +86,7 @@ html {
 
 body {
     font-family: "Lato", sans-serif;
-    background: $white;
+    background: #fff;
     color: $darkGrey;
     position: relative;
     z-index: 0;
@@ -115,7 +117,7 @@ body {
     }
 
     .form {
-        background: $white;
+        background: $background;
         padding: 4rem;
         display: grid;
         grid-template-columns: 1fr;
@@ -128,6 +130,7 @@ body {
         -ms-border-radius: 1.4rem;
         -o-border-radius: 1.4rem;
         box-shadow: 0 5rem 20rem rgba(23, 26, 28, 0.1);
+        color: $primary-color;
     }
 
     .form-question-title {
@@ -161,7 +164,7 @@ body {
     .btn-next,
     .btn-submit,
     .btn-prev {
-        color: $white;
+        color: $background;
         flex: 1;
     }
 
@@ -191,13 +194,15 @@ body {
     }
 
     .btn-prev:hover {
-        background: $light-primary;
+        background: $lighter-primary;
+        color: $dark-primary;
+        border: 3px solid $dark-primary;
     }
 
     .btn-prev:active {
-        background: $lighter-primary;
-        border-color: $tertiary-color;
-        color: $tertiary-color;
+        background: $light-primary;
+        border: 3px solid $darker-primary;
+        color: $darker-primary;
     }
 }
 
@@ -216,7 +221,7 @@ body {
     animation-fill-mode: forwards;
 
     .dialog {
-        background: $white;
+        background: $background;
         color: $darkGrey;
         min-height: 50%;
         padding: 4rem;
@@ -251,7 +256,7 @@ body {
     .btn {
         @include font($small-size);
         width: 40%;
-        color: $white;
+        color: $background;
     }
 
     .btn-cancel {
@@ -272,10 +277,11 @@ body {
 }
 
 .score-container {
-    background: $darkGrey;
-    color: $white;
+    background: $background;
+    color: $darkGrey;
     padding: 4rem;
     text-align: center;
+    box-shadow: 0 5rem 20rem rgba(23, 26, 28, 0.1);
 
     .score-subtitle {
         margin-bottom: 4rem;
@@ -290,11 +296,11 @@ body {
 /* Toggled Classes*/
 .active {
     background: $primary-color;
-    color: $white;
+    color: $background;
 }
 .chosen {
     background: $tertiary-color;
-    color: $white;
+    color: $background;
 }
 
 .hidden {

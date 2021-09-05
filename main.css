@@ -19,7 +19,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  color: #fff;
+  color: #393939;
 }
 
 .btn:hover,
@@ -107,7 +107,7 @@ body {
 }
 
 .container .form {
-  background: #fff;
+  background: #393939;
   padding: 4rem;
   display: -ms-grid;
   display: grid;
@@ -124,6 +124,7 @@ body {
   -o-border-radius: 1.4rem;
   -webkit-box-shadow: 0 5rem 20rem rgba(23, 26, 28, 0.1);
           box-shadow: 0 5rem 20rem rgba(23, 26, 28, 0.1);
+  color: #70e9f1;
 }
 
 .container .form-question-title {
@@ -166,7 +167,7 @@ body {
 .container .btn-next,
 .container .btn-submit,
 .container .btn-prev {
-  color: #fff;
+  color: #393939;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -198,13 +199,15 @@ body {
 }
 
 .container .btn-prev:hover {
-  background: #e2fbfc;
+  background: #a9f2f7;
+  color: #438c91;
+  border: 3px solid #438c91;
 }
 
 .container .btn-prev:active {
-  background: #d4f8fb;
-  border-color: #5abac1;
-  color: #5abac1;
+  background: #9bf0f5;
+  border: 3px solid #224648;
+  color: #224648;
 }
 
 .overlay {
@@ -231,7 +234,7 @@ body {
 }
 
 .overlay .dialog {
-  background: #fff;
+  background: #393939;
   color: #171a1c;
   min-height: 50%;
   padding: 4rem;
@@ -273,7 +276,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   width: 40%;
-  color: #fff;
+  color: #393939;
 }
 
 .overlay .btn-cancel {
@@ -293,10 +296,12 @@ body {
 }
 
 .score-container {
-  background: #171a1c;
-  color: #fff;
+  background: #393939;
+  color: #171a1c;
   padding: 4rem;
   text-align: center;
+  -webkit-box-shadow: 0 5rem 20rem rgba(23, 26, 28, 0.1);
+          box-shadow: 0 5rem 20rem rgba(23, 26, 28, 0.1);
 }
 
 .score-container .score-subtitle {
@@ -313,12 +318,12 @@ body {
 /* Toggled Classes*/
 .active {
   background: #70e9f1;
-  color: #fff;
+  color: #393939;
 }
 
 .chosen {
   background: #5abac1;
-  color: #fff;
+  color: #393939;
 }
 
 .hidden {
