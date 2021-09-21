@@ -231,6 +231,8 @@ body {
           animation: fade 0.4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-backdrop-filter: blur(0.4rem);
+          backdrop-filter: blur(0.4rem);
 }
 
 .overlay .dialog {
@@ -257,6 +259,11 @@ body {
   font-weight: 700;
 }
 
+.overlay .dialog-body,
+.overlay .btn-cancel {
+  color: #fff;
+}
+
 .overlay .dialog-body {
   max-width: 30ch;
   font-size: 1.6rem;
@@ -276,12 +283,10 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   width: 40%;
-  color: #393939;
 }
 
 .overlay .btn-cancel {
   border: 1px solid #f9a408;
-  color: #171a1c;
   background: transparent;
 }
 
@@ -297,11 +302,14 @@ body {
 
 .score-container {
   background: #393939;
-  color: #171a1c;
+  color: #fff;
   padding: 4rem;
   text-align: center;
-  -webkit-box-shadow: 0 5rem 20rem rgba(23, 26, 28, 0.1);
-          box-shadow: 0 5rem 20rem rgba(23, 26, 28, 0.1);
+  -webkit-box-shadow: 0 0.5rem 20rem rgba(23, 26, 28, 0.1);
+          box-shadow: 0 0.5rem 20rem rgba(23, 26, 28, 0.1);
+  max-width: 50%;
+  margin: auto;
+  border-radius: 1.4rem;
 }
 
 .score-container .score-subtitle {
